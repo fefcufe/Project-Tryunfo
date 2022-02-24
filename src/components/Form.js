@@ -14,6 +14,7 @@ class Form extends React.Component {
 
         <label htmlFor="name" className="nome">
           <input
+            name="cardName"
             onChange={ onInputChange }
             value={ cardName }
             id="name"
@@ -26,6 +27,7 @@ class Form extends React.Component {
         <label htmlFor="descricao" className="descricao">
           Descrição:
           <textarea
+            name="cardDescription"
             id="descricao"
             data-testid="description-input"
             value={ cardDescription }
@@ -36,6 +38,7 @@ class Form extends React.Component {
         <fieldset className="atributos">
           Atributos:
           <input
+            name="cardAttr1"
             type="number"
             data-testid="attr1-input"
             value={ cardAttr1 }
@@ -43,6 +46,7 @@ class Form extends React.Component {
           />
 
           <input
+            name="cardAttr2"
             type="number"
             data-testid="attr2-input"
             value={ cardAttr2 }
@@ -50,6 +54,7 @@ class Form extends React.Component {
           />
 
           <input
+            name="cardAttr3"
             type="number"
             data-testid="attr3-input"
             value={ cardAttr3 }
@@ -61,6 +66,7 @@ class Form extends React.Component {
         <label htmlFor="imagem" className="imagem">
           Imagem:
           <input
+            name="cardImage"
             id="imagem"
             type="text"
             data-testid="image-input"
@@ -70,6 +76,7 @@ class Form extends React.Component {
         </label>
 
         <select
+          name="cardRare"
           data-testid="rare-input"
           placeholder="Escolha a raridade da carta"
           value={ cardRare }
@@ -83,6 +90,7 @@ class Form extends React.Component {
 
         <label htmlFor="checkbox">
           <input
+            name="cardTrunfo"
             id="checkbox"
             type="checkbox"
             data-testid="trunfo-input"
@@ -93,6 +101,7 @@ class Form extends React.Component {
         </label>
 
         <button
+          name="isSaveButtonDisabled"
           data-testid="save-button"
           type="submit"
           disabled={ isSaveButtonDisabled }
