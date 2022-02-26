@@ -6,10 +6,11 @@ class Form extends React.Component {
     const { cardName, cardDescription, cardAttr1, cardAttr2,
       cardAttr3, cardImage, cardRare, cardTrunfo,
       // eslint-disable-next-line no-unused-vars
-      hasTrunfo, isSaveButtonDisabled, onInputChange,
-      onSaveButtonClick } = this.props;
+      hasTrunfo, onInputChange,
+      onSaveButtonClick, isSaveButtonDisabled } = this.props;
 
     return (
+
       <form name="form">
 
         <label htmlFor="name" className="nome">
